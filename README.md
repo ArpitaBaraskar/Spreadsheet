@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Spreadsheet Prototype
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A pixel-perfect, interactive spreadsheet-like React app inspired by Google Sheets and Figma design.
 
-## Available Scripts
+## Features
+- Spreadsheet grid with editable cells and keyboard navigation
+- Toolbar with Hide Fields, Sort, Filter, Cell View, Import, Export, Share
+- Status and Priority badges
+- Bottom tab navigation (All Orders, Pending, Reviewed, Arrived, +)
+- Column hiding, sorting, and tab-based filtering
+- Fully responsive and styled with Tailwind CSS
+- TypeScript strict mode
 
-In the project directory, you can run:
+## Tech Stack
+- React 18 (Vite or CRA)
+- TypeScript
+- Tailwind CSS
+- ESLint + Prettier
 
-### `npm start`
+## Setup & Run
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   # or for Create React App:
+   npm start
+   ```
+3. **Open in browser:**
+   Visit [http://localhost:3000](http://localhost:3000) (or the port shown in your terminal).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Linting & Type Checking
+- Run ESLint:
+  ```sh
+  npm run lint
+  ```
+- Run TypeScript type check:
+  ```sh
+  npm run type-check
+  ```
 
-### `npm test`
+## Folder Structure
+```
+spreadsheet-app/
+├── public/
+├── src/
+│   ├── components/
+│   ├── hooks/
+│   ├── types/
+│   ├── utils/
+│   ├── styles/
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── index.css
+├── tailwind.config.js
+├── postcss.config.js
+├── package.json
+└── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design
+- UI matches the provided Figma: [Figma Link](https://www.figma.com/design/3nywpu5sz45RrCmwe68QZP/Intern-Design-Assigment?node-id=2-2535)
+- No emojis, all icons are custom SVGs
 
-### `npm run build`
+## Notes & Trade-offs
+- No backend: all data is local and resets on refresh
+- Minimal custom table for spreadsheet experience
+- Stretch goals (column resize, advanced filters, etc.) can be added as needed
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Good luck and have fun!**
